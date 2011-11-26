@@ -1,0 +1,297 @@
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (62.7ms)
+Completed 500 Internal Server Error in 138ms
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (61.5ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:39:08 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:39:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 65ms
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:39:08 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7ff21e729ff8,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7ff21e72a200,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:39:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:39:08 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7ff21e194a48,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:39:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:39:08 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7ff21e0e1f88,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:39:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name[0m
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (61.0ms)
+Completed 500 Internal Server Error in 115ms
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (74.9ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:39:30 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:39:30 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 80ms
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:39:31 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fc07bbef0d0,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7fc07bbef468,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:39:31 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:39:31 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fc07b3e0600,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:39:31 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:39:31 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7fc07b100688,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:39:31 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name[0m
+  Processing by SearchesController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name[0m
+Rendered searches/new.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 92ms (Views: 90.6ms | ActiveRecord: 0.8ms)
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (20.6ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:40:02 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:40:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 24ms
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:40:02 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7ffcd1e58488,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7ffcd1e58618,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:40:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:40:03 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7ffcd48d4e28,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:40:03 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:40:03 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7ffcd3418200,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:40:03 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (123.0ms)
+Completed 500 Internal Server Error in 175ms
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (20.5ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:47:39 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:47:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 24ms
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:47:39 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fba86240ac0,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7fba86241128,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:47:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:47:39 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fba85232908,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:47:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:47:39 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7fba83d777c0,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:47:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name[0m
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (119.9ms)
+Completed 500 Internal Server Error in 173ms
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (19.9ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:48:01 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:48:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 24ms
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:48:01 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7ff89082ef70,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7ff89082f100,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:48:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:48:01 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7ff88bc25b10,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:48:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:48:01 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7ff88b68aea8,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:48:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name[0m
+
+
+Started GET "/products" for 127.0.0.1 at 2011-11-26 18:52:46 +0000
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+Rendered products/_product.html.erb (171.7ms)
+Rendered products/index.html.erb within layouts/application (212.5ms)
+Completed 200 OK in 312ms (Views: 309.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:52:46 +0000
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (168.8ms)
+Completed 500 Internal Server Error in 177ms
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:52:47 +0000
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (62.5ms)
+Completed 500 Internal Server Error in 64ms
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:52:47 +0000
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (125.8ms)
+Completed 500 Internal Server Error in 127ms
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:52:47 +0000
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (170.5ms)
+Completed 500 Internal Server Error in 172ms
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:52:47 +0000
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (63.4ms)
+Completed 500 Internal Server Error in 65ms
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (135.4ms)
+Completed 500 Internal Server Error in 200ms
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (24.9ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:52:59 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:52:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 29ms
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:52:59 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fedf9e47b10,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7fedf9e481c8,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:52:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:52:59 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fedf99fd0c8,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:52:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:52:59 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7fedf98c1628,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:52:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name[0m
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (121.4ms)
+Completed 500 Internal Server Error in 175ms
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (20.2ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:54:02 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:54:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/searches/1
+Completed 302 Found in 24ms
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:54:02 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fdc639e7400,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7fdc639f0870,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:54:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:54:02 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fdc63222648,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:54:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:54:02 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7fdc631d22d8,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:54:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name[0m
+  Processing by SearchesController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name[0m
+Rendered searches/new.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 0.8ms)
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (20.6ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:56:49 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:56:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 24ms
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:56:49 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fe612e08378,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7fe612e08508,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:56:49 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:56:49 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fe61743afd0,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 18:56:49 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 18:56:49 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7fe61726d518,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 18:56:49 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name
+  Processing by SearchesController#new as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name[0m
+Rendered searches/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 97ms (Views: 94.9ms | ActiveRecord: 0.9ms)
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.4ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 19:18:45 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 19:18:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 28ms
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 19:18:46 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7ff008d153a8,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7ff008d16988,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 19:18:46 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 19:18:46 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7ff00c539658,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 19:18:46 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 19:18:46 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7ff00c2b0cb0,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 19:18:46 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name
+  Processing by SearchesController#new as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name[0m
+Rendered searches/new.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 129ms (Views: 127.1ms | ActiveRecord: 1.0ms)
+  Processing by SearchesController#create as HTML
+  Parameters: {"search"=>{"keywords"=>"Acoustic"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (23.8ms)[0m  [1mINSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 19:21:47 UTC +00:00], ["keywords", "Acoustic"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 19:21:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/searches/1
+Completed 302 Found in 28ms
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 19:21:47 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fd24bd28c80,'0.3E2',9(18)>], ["min_price", #<BigDecimal:7fd24bd28fa0,'0.1E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 19:21:47 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (price >= 10.0) AND (price <= 30.0) ORDER BY name
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 19:21:47 UTC +00:00], ["keywords", nil], ["max_price", #<BigDecimal:7fd250130d10,'0.3E2',9(18)>], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 19:21:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (price <= 30.0) ORDER BY name
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 19:21:47 UTC +00:00], ["keywords", nil], ["max_price", nil], ["min_price", #<BigDecimal:7fd24ef85598,'0.5E2',9(18)>], ["updated_at", Sat, 26 Nov 2011 19:21:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (price >= 50.0) ORDER BY name

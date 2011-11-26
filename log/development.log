@@ -1,0 +1,1625 @@
+
+
+Started GET "/products/list?term=Aco" for 127.0.0.1 at 2011-11-26 18:33:27 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for ProductsController):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (43.0ms)
+
+
+Started GET "/products/list?term=Acou" for 127.0.0.1 at 2011-11-26 18:33:28 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for ProductsController):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list?term=A" for 127.0.0.1 at 2011-11-26 18:33:28 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for ProductsController):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list?term=Acous" for 127.0.0.1 at 2011-11-26 18:33:28 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for ProductsController):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/products/list?term=Acousti" for 127.0.0.1 at 2011-11-26 18:33:29 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for ProductsController):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/products/list?term=Acoustic" for 127.0.0.1 at 2011-11-26 18:33:29 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for ProductsController):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:33:53 +0000
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (168.9ms)
+Completed 500 Internal Server Error in 181ms
+
+ActionView::Template::Error (undefined local variable or method `products_list1_path' for #<#<Class:0x007fef44ba15b8>:0x007fef44aaf268>):
+    3: <%= form_for @search do |f| %>
+    4:     <div class="field">
+    5:       <%= f.label :keywords %><br />
+    6:       <%= f.text_field :keywords, data: {autocomplete_source: products_list1_path} %>
+    7:     </div>
+    8:     <div class="field">
+    9:       <%= f.label :category_id %><br />
+  app/views/searches/new.html.erb:6:in `block in _app_views_searches_new_html_erb___3692027241234564985_70332812979760'
+  app/views/searches/new.html.erb:3:in `_app_views_searches_new_html_erb___3692027241234564985_70332812979760'
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+  Processing by SearchesController#new as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name[0m
+Rendered searches/new.html.erb within layouts/application (102.6ms)
+Completed 200 OK in 150ms (Views: 148.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+Served asset /searches.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+Served asset /jquery-ui.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+Served asset /products.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+Served asset /searches.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+Served asset /products.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 18:34:08 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/list?term=Acous" for 127.0.0.1 at 2011-11-26 18:34:11 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"term"=>"Acous", "id"=>"list"}
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json, :js, :html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:39:03 +0000
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (105.7ms)
+Completed 500 Internal Server Error in 164ms
+
+ActionView::Template::Error (undefined method `split' for true:TrueClass):
+    3: <%= form_for @search do |f| %>
+    4:     <div class="field">
+    5:       <%= f.label :keywords %><br />
+    6:       <%= f.text_field :keywords, data: {autocomplete_source: products_list_path} %>
+    7:     </div>
+    8:     <div class="field">
+    9:       <%= f.label :category_id %><br />
+  app/views/searches/new.html.erb:6:in `block in _app_views_searches_new_html_erb__1102274845551861006_70234544291260'
+  app/views/searches/new.html.erb:3:in `_app_views_searches_new_html_erb__1102274845551861006_70234544291260'
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:39:41 +0000
+  Processing by SearchesController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name[0m
+Rendered searches/new.html.erb within layouts/application (75.4ms)
+Completed 200 OK in 108ms (Views: 106.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 18:39:42 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 18:39:42 +0000
+Served asset /products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 18:39:42 +0000
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 18:39:42 +0000
+Served asset /jquery-ui.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 18:39:42 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 18:39:42 +0000
+Served asset /searches.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 18:39:42 +0000
+Served asset /products.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 18:39:42 +0000
+Served asset /searches.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 18:39:42 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/list?term=Acous" for 127.0.0.1 at 2011-11-26 18:39:45 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"term"=>"Acous", "id"=>"list"}
+Completed 500 Internal Server Error in 13ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json, :js, :html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list?term=Acousti" for 127.0.0.1 at 2011-11-26 18:39:46 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"term"=>"Acousti", "id"=>"list"}
+Completed 500 Internal Server Error in 10ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json, :js, :html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list?term=Acoustic" for 127.0.0.1 at 2011-11-26 18:39:46 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"term"=>"Acoustic", "id"=>"list"}
+Completed 500 Internal Server Error in 11ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json, :js, :html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:39:51 +0000
+  Processing by SearchesController#new as HTML
+Rendered searches/new.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `split' for true:TrueClass):
+    3: <%= form_for @search do |f| %>
+    4:     <div class="field">
+    5:       <%= f.label :keywords %><br />
+    6:       <%= f.text_field :keywords, data: {autocomplete_source: products_list_path} %>
+    7:     </div>
+    8:     <div class="field">
+    9:       <%= f.label :category_id %><br />
+  app/views/searches/new.html.erb:6:in `block in _app_views_searches_new_html_erb__1102274845551861006_70234544291260'
+  app/views/searches/new.html.erb:3:in `_app_views_searches_new_html_erb__1102274845551861006_70234544291260'
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+  Processing by SearchesController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" ORDER BY name
+Rendered searches/new.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+Served asset /searches.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+Served asset /searches.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 18:40:03 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/products/list?term=A" for 127.0.0.1 at 2011-11-26 18:40:05 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"term"=>"A", "id"=>"list"}
+Completed 500 Internal Server Error in 12ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json, :js, :html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/products/list?term=Acous" for 127.0.0.1 at 2011-11-26 18:40:06 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"term"=>"Acous", "id"=>"list"}
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json, :js, :html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+  Processing by SearchesController#new as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name[0m
+Rendered searches/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+Served asset /searches.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+Served asset /searches.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 18:42:28 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/list?term=Acous" for 127.0.0.1 at 2011-11-26 18:42:30 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"term"=>"Acous", "id"=>"list"}
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json, :js, :html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 18:43:08 +0000
+  Processing by SearchesController#new as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" ORDER BY name
+Rendered searches/new.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 18:43:09 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 18:43:09 +0000
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 18:43:09 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 18:43:09 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 18:43:09 +0000
+Served asset /searches.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 18:43:09 +0000
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 18:43:09 +0000
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 18:43:09 +0000
+Served asset /searches.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 18:43:09 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/list?term=Acous" for 127.0.0.1 at 2011-11-26 18:43:11 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"term"=>"Acous", "id"=>"list"}
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json, :js, :html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/products/list" for 127.0.0.1 at 2011-11-26 18:44:00 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/products/list?format=json" for 127.0.0.1 at 2011-11-26 18:44:13 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/products/list?format=json" for 127.0.0.1 at 2011-11-26 18:47:39 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list:format=json" for 127.0.0.1 at 2011-11-26 18:47:44 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list:format=json"}
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/products/list" for 127.0.0.1 at 2011-11-26 18:57:48 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 68ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (50.4ms)
+
+
+Started GET "/products/list:format=json" for 127.0.0.1 at 2011-11-26 18:58:00 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list:format=json"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 18:59:23 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 18:59:26 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/?format=json" for 127.0.0.1 at 2011-11-26 18:59:33 +0000
+  Processing by ProductsController#index as JSON
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template products/index, application/index with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+Rendered products/_product.html.erb (214.4ms)
+Rendered products/index.html.erb within layouts/application (240.3ms)
+Completed 200 OK in 342ms (Views: 338.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+Served asset /products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+Served asset /searches.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+Served asset /products.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+Served asset /searches.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 18:59:46 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/?format=json" for 127.0.0.1 at 2011-11-26 18:59:55 +0000
+  Processing by ProductsController#index as JSON
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/index, application/index with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 19:02:10 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 19:05:30 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:05:33 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:06:09 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:07:16 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:14:47 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:14:49 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:15:38 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:15:39 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:17:04 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:17:11 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 67ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:17:12 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 19:17:19 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 19:17:31 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.6ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 19:17:33 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 19:17:34 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 19:17:34 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/?format=json" for 127.0.0.1 at 2011-11-26 19:17:35 +0000
+  Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:17:38 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:17:50 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 82ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (45.3ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:17:57 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:18:26 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:19:01 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/products/list/" for 127.0.0.1 at 2011-11-26 19:19:13 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"list"}
+Completed 500 Internal Server Error in 67ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (43.9ms)
+
+
+Started GET "/products/index" for 127.0.0.1 at 2011-11-26 19:19:22 +0000
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"index"}
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template products/show, application/show with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Dave/Sites/rails/episode-111/store-before/app/views"
+):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+Rendered products/_product.html.erb (242.8ms)
+Rendered products/index.html.erb within layouts/application (268.5ms)
+Completed 200 OK in 350ms (Views: 346.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+Served asset /searches.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+Served asset /products.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+Served asset /products.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+Served asset /searches.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 19:19:25 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-11-26 19:21:16 +0000
+
+SyntaxError (/Users/Dave/Sites/rails/episode-111/store-before/config/routes.rb:7: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+Rendered products/_product.html.erb (216.5ms)
+Rendered products/index.html.erb within layouts/application (223.8ms)
+Completed 200 OK in 233ms (Views: 229.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+Served asset /searches.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+Served asset /searches.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 19:21:24 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/list" for 127.0.0.1 at 2011-11-26 19:21:28 +0000
+
+AbstractController::ActionNotFound (The action 'list' could not be found for ProductsController):
+  
+
+Rendered /Users/Dave/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/products/list" for 127.0.0.1 at 2011-11-26 19:22:42 +0000
+  Processing by ProductsController#list as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (name like '%%') ORDER BY name[0m
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 6 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 2 LIMIT 1
+Rendered products/_product.html.erb (148.7ms)
+Rendered products/index.html.erb within layouts/application (155.3ms)
+Completed 200 OK in 163ms (Views: 159.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+Served asset /searches.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+Served asset /searches.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:47 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+  Processing by SearchesController#new as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY name[0m
+Rendered searches/new.html.erb within layouts/application (63.6ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+Served asset /searches.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+Served asset /searches.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 19:22:49 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/list?term=Aco" for 127.0.0.1 at 2011-11-26 19:22:51 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"Aco"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (name like '%Aco%') ORDER BY name
+Completed 200 OK in 18ms (Views: 5.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/list?term=Acou" for 127.0.0.1 at 2011-11-26 19:22:52 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"Acou"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (name like '%Acou%') ORDER BY name[0m
+Completed 200 OK in 10ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+  Processing by SearchesController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" ORDER BY name
+Rendered searches/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+Served asset /searches.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+Served asset /searches.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:25 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/list?term=A" for 127.0.0.1 at 2011-11-26 19:25:26 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"A"}
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT distinct name FROM "products" WHERE (name like '%A%') ORDER BY name[0m
+Completed 200 OK in 51ms (Views: 40.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/list?term=Ac" for 127.0.0.1 at 2011-11-26 19:25:27 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"Ac"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT distinct name FROM "products" WHERE (name like '%Ac%') ORDER BY name
+Completed 200 OK in 11ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/list?term=Aco" for 127.0.0.1 at 2011-11-26 19:25:28 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"Aco"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT distinct name FROM "products" WHERE (name like '%Aco%') ORDER BY name[0m
+Completed 200 OK in 11ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/list?term=Acou" for 127.0.0.1 at 2011-11-26 19:25:29 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"Acou"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT distinct name FROM "products" WHERE (name like '%Acou%') ORDER BY name
+Completed 200 OK in 11ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/list?term=A" for 127.0.0.1 at 2011-11-26 19:25:30 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"A"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT distinct name FROM "products" WHERE (name like '%A%') ORDER BY name[0m
+Completed 200 OK in 11ms (Views: 3.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/list?term=10" for 127.0.0.1 at 2011-11-26 19:25:32 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"10"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT distinct name FROM "products" WHERE (name like '%10%') ORDER BY name
+Completed 200 OK in 11ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/list?term=z" for 127.0.0.1 at 2011-11-26 19:25:34 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"z"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT distinct name FROM "products" WHERE (name like '%z%') ORDER BY name[0m
+Completed 200 OK in 11ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/list?term=zr" for 127.0.0.1 at 2011-11-26 19:25:36 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"zr"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT distinct name FROM "products" WHERE (name like '%zr%') ORDER BY name
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/list?term=z" for 127.0.0.1 at 2011-11-26 19:25:36 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"z"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT distinct name FROM "products" WHERE (name like '%z%') ORDER BY name[0m
+Completed 200 OK in 11ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/list?term=za" for 127.0.0.1 at 2011-11-26 19:25:37 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"za"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT distinct name FROM "products" WHERE (name like '%za%') ORDER BY name
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/list?term=B" for 127.0.0.1 at 2011-11-26 19:25:39 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"B"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT distinct name FROM "products" WHERE (name like '%B%') ORDER BY name[0m
+Completed 200 OK in 45ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/list?term=Bi" for 127.0.0.1 at 2011-11-26 19:25:40 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"Bi"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT distinct name FROM "products" WHERE (name like '%Bi%') ORDER BY name
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/list?term=Bike" for 127.0.0.1 at 2011-11-26 19:25:41 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"Bike"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT distinct name FROM "products" WHERE (name like '%Bike%') ORDER BY name[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/list?term=B" for 127.0.0.1 at 2011-11-26 19:25:42 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"B"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT distinct name FROM "products" WHERE (name like '%B%') ORDER BY name
+Completed 200 OK in 10ms (Views: 3.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/list?term=Bo" for 127.0.0.1 at 2011-11-26 19:25:44 +0000
+  Processing by ProductsController#list as JSON
+  Parameters: {"term"=>"Bo"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT distinct name FROM "products" WHERE (name like '%Bo%') ORDER BY name[0m
+Completed 200 OK in 11ms (Views: 3.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/searches" for 127.0.0.1 at 2011-11-26 19:25:48 +0000
+  Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nO3EypgD9bkg3Wdvbs195cQLGxZ4XzYub73CnZOfhMM=", "search"=>{"keywords"=>"Bowling Ball", "category_id"=>"", "min_price"=>"", "max_price"=>""}, "commit"=>"Search"}
+  [1m[35mSQL (17.2ms)[0m  INSERT INTO "searches" ("category_id", "created_at", "keywords", "max_price", "min_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", nil], ["created_at", Sat, 26 Nov 2011 19:25:48 UTC +00:00], ["keywords", "Bowling Ball"], ["max_price", nil], ["min_price", nil], ["updated_at", Sat, 26 Nov 2011 19:25:48 UTC +00:00]]
+Redirected to http://0.0.0.0:3000/searches/8
+Completed 302 Found in 35ms
+
+
+Started GET "/searches/8" for 127.0.0.1 at 2011-11-26 19:25:48 +0000
+  Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "products" WHERE (name like '%Bowling Ball%')
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (name like '%Bowling Ball%') ORDER BY name[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = 1 LIMIT 1[0m
+Rendered products/_product.html.erb (23.5ms)
+Rendered searches/show.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 97ms (Views: 93.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2011-11-26 19:25:48 +0000
+Served asset /searches.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:48 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2011-11-26 19:25:48 +0000
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-26 19:25:48 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:48 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:48 +0000
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:49 +0000
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:49 +0000
+Served asset /searches.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-26 19:25:49 +0000
+Served asset /application.js - 304 Not Modified (0ms)
